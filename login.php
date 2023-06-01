@@ -42,13 +42,13 @@ if ($conn->connect_error) {
                 header("Location: studentdach.php");
                 exit();
             } elseif ($_SESSION['role'] === "admin") {
-                header("Location: Dashboard Admin.php");
+                header("Location: DashAdmin.php");
                 exit();
             } elseif ($_SESSION['role'] === "societé") {
-                header("Location: Dashboard societé.php");
+                header("Location: Dashboard_societe.php");
                 exit();
             } elseif ($_SESSION['role'] === "prof") {
-                header("Location: Dashboard Teacher.php");
+                header("Location: Dashboard_Teacher.php");
                 exit();
             }
         } else {

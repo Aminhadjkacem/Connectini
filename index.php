@@ -7,11 +7,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Connectini</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    #ctaa{
+      background-image: url("image_back_blur2.png");
+    }
+  </style>
 </head>
 
 <body>
   <!--hero + nav bar-->
-  <header class=" flex sticky top-0   items-center justify-between bg-gray-950 py-4 px-5  md:py-4 ">
+  <header class=" flex sticky top-0   items-center justify-between bg-slate-950 py-4 px-5  md:py-1 ">
       <!-- logo - start -->
       <a href="#" class="flex items-center mb-4 text-2xl mt-4 font-semibold text-gray-900 dark:text-white">
         <img class="w-auto h-9 mr-2" src="logo.png" alt="logo">
@@ -24,14 +29,14 @@
         <a href="#" class="text-lg font-semibold text-yellow-500">Home</a>
         <a href="#"
           class="text-lg font-semibold text-gray-600 transition duration-100 hover:text-yellow-500 active:text-yellow-500">Offres</a>
-        <a href="#"
+        <a href="contactus.html"
           class="text-lg font-semibold text-gray-600 transition duration-100 hover:text-yellow-500 active:text-yellow-500">Contact</a>
       </nav>
       <!-- nav - end -->
 
       <!-- buttons - start -->
       <a href="login.html"
-        class="hidden rounded-lg bg-yellow-500 px-8 py-3 text-center text-sm font-semibold text-white outline-none ring-yellow-300 transition duration-100 hover:bg-gray-300 focus-visible:ring active:text-gray-700 md:text-base lg:inline-block">Connexion</a>
+        class="hidden rounded-lg bg-yellow-500 px-8 py-3 text-center text-sm font-semibold text-white outline-none ring-yellow-300 transition duration-100 hover:bg-yellow-600 focus-visible:ring active:text-gray-700 md:text-base lg:inline-block">Connexion</a>
 
       <button type="button"
         class="inline-flex items-center gap-2 rounded-lg bg-gray-200 px-2.5 py-2 text-sm font-semibold text-gray-500 ring-yellow-300 hover:bg-gray-300 focus-visible:ring active:text-gray-700 md:text-base lg:hidden">
@@ -40,18 +45,15 @@
             d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h6a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
             clip-rule="evenodd" />
         </svg>
-        
           Menu
       </button>
       <!-- buttons - end -->
     </header>
-  <div class="bg-gray-900 pt-4 pb-6 sm:pb-8 lg:pb-12">
-
-    
-<div class="mx-auto max-w-screen-2xl px-4 md:px-8">
-    <section class="flex flex-col justify-between gap-6 sm:gap-10 md:gap-16 lg:flex-row mx-10">
+  <div id="hero" class="bg-gray-900 pt-4 pb-6 sm:pb-8 lg:pb-12">
+    <div class="mx-auto max-w-screen-2xl px-4 md:px-8">
+      <section class="flex flex-col justify-between gap-6 sm:gap-10 md:gap-16 lg:flex-row mx-10">
       <!-- content - start -->
-      <div class="flex flex-col justify-center sm:text-center lg:py-12 lg:text-left xl:w-5/12 xl:py-24">
+      <div class="flex flex-col justify-center sm:text-center lg:py-12 lg:text-left xl:w-5/12 xl:py-24 mx-10">
         <p class="mb-4 font-semibold text-yellow-500 md:mb-6 md:text-lg xl:text-xl">
           Très fier de vous présenter</p>
 
@@ -73,18 +75,17 @@
       <!-- content - end -->
 
       <!-- image - start -->
-      <div class="h-48 overflow-hidden rounded-lg bg-gray-100 shadow-lg lg:h-auto xl:w-5/12">
+      <div class="h-48 overflow-hidden rounded-lg bg-gray-100 shadow-lg lg:h-auto xl:w-5/12 mx-10 my-10">
         <img src="image2.jpg" loading="lazy" alt="Photo by Fakurian Design"
           class="h-full w-full object-cover object-center" />
       </div>
       <!-- image - end -->
-    </section>
-  </div>
+      </section>
+    </div>
   </div>
 
   <!--benefits-->
-  <!--benefits-->
-  <div class="bg-gray-900 py-6 sm:py-8 lg:py-12">
+  <div class="bg-gray-800 py-6 sm:py-8 lg:py-12">
     <div class="mx-auto max-w-screen-2xl px-4 md:px-8">
       <!-- text - start -->
       <div class="mb-10 md:mb-16">
@@ -179,27 +180,27 @@
       <div class="grid grid-cols-2 gap-8 md:grid-cols-4 md:gap-0 md:divide-x">
         <!-- stat - start -->
         <div class="flex flex-col items-center md:p-4">
-          <div class="text-xl font-bold text-yellow-500 sm:text-2xl md:text-3xl">200+</div>
+          <div class="text-xl font-bold text-yellow-500 sm:text-2xl md:text-3xl">200</div>
           <div class="text-sm font-semibold sm:text-base text-white">Entrprises</div>
         </div>
         <!-- stat - end -->
 
         <!-- stat - start -->
         <div class="flex flex-col items-center md:p-4">
-          <div class="text-xl font-bold text-yellow-500 sm:text-2xl md:text-3xl">500+</div>
+          <div class="text-xl font-bold text-yellow-500 sm:text-2xl md:text-3xl">500</div>
           <div class="text-sm font-semibold sm:text-base text-white">Encadreurs</div>
         </div>
 
         <!-- stat - start -->
         <div class="flex flex-col items-center md:p-4">
-          <div class="text-xl font-bold text-yellow-500 sm:text-2xl md:text-3xl">1000+</div>
+          <div class="text-xl font-bold text-yellow-500 sm:text-2xl md:text-3xl">1000</div>
           <div class="text-sm font-semibold sm:text-base text-white">Etudiants</div>
         </div>
         <!-- stat - end -->
 
         <!-- stat - start -->
         <div class="flex flex-col items-center md:p-4">
-          <div class="text-xl font-bold text-yellow-500 sm:text-2xl md:text-3xl">+100</div>
+          <div class="text-xl font-bold text-yellow-500 sm:text-2xl md:text-3xl">100</div>
           <div class="text-sm font-semibold sm:text-base text-white">Facultés</div>
         </div>
         <!-- stat - end -->
@@ -208,46 +209,46 @@
   </div>
 
   <!--testimonials-->
-  <div class="bg-gray-900 py-6 sm:py-8 lg:py-12">
+  <div class="bg-gray-800 py-6 sm:py-8 lg:py-12">
     <div class="mx-auto max-w-screen-xl px-4 md:px-8">
       <h2 class="mb-8 text-center text-2xl font-bold text-white md:mb-12 lg:text-3xl">
         Rétroaction</h2>
 
       <div class="grid gap-4 md:grid-cols-2 md:gap-8">
         <!-- quote - start -->
-        <div class="flex flex-col items-center gap-4 rounded-lg bg-yellow-500 px-8 py-6 md:gap-6">
-          <div class="max-w-md text-center text-gray-800 lg:text-lg">“Votre site web a tout changé ! Succès académique
+        <div class="flex flex-col items-center gap-4 rounded-lg bg-gray-900 px-8 py-6 md:gap-6">
+          <div class="max-w-md text-center text-yellow-600 hover:text-yellow-500 lg:text-lg">“Votre site web a tout changé ! Succès académique
             décuplé, compétences pratiques développées, carrière propulsée. Merci infiniment !”</div>
 
           <div class="flex flex-col items-center gap-2 sm:flex-row md:gap-3">
-            <div class="h-12 w-12 overflow-hidden rounded-full border-2 border-yellow-100 bg-gray-100 md:h-14 md:w-14">
+            <div class="h-12 w-12 overflow-hidden rounded-full border-2 border-black bg-gray-100 md:h-14 md:w-14">
               <img src="Ahmed.jpg" loading="lazy" alt="Photo by Radu Florin"
                 class="h-full w-full object-cover object-center" />
             </div>
 
             <div>
-              <div class="text-center text-sm font-bold text-yellow-50 sm:text-left md:text-base">ahmed masmoudi</div>
-              <p class="text-center text-sm text-yellow-200 sm:text-left md:text-sm">Etudiant a ISIMS</p>
+              <div class="text-center text-sm font-bold text-white sm:text-left md:text-base">ahmed masmoudi</div>
+              <p class="text-center text-sm text-gray-500 sm:text-left md:text-sm">Etudiant a ISIMS</p>
             </div>
           </div>
         </div>
         <!-- quote - end -->
 
         <!-- quote - start -->
-        <div class="flex flex-col items-center gap-4 rounded-lg bg-yellow-500 px-8 py-6 md:gap-6">
-          <div class="max-w-md text-center text-gray-800 lg:text-lg">“
+        <div class="flex flex-col items-center gap-4 rounded-lg bg-gray-900 px-8 py-6 md:gap-6">
+          <div class="max-w-md text-center text-yellow-600 hover:text-yellow-500 lg:text-lg">“
             Expérience incroyable : succès académique, compétences pratiques, opportunités professionnelles. Merci !”
           </div>
 
           <div class="flex flex-col items-center gap-2 sm:flex-row md:gap-3">
-            <div class="h-12 w-12 overflow-hidden rounded-full border-2 border-yellow-100 bg-gray-100 md:h-14 md:w-14">
+            <div class="h-12 w-12 overflow-hidden rounded-full border-2 border-black bg-gray-100 md:h-14 md:w-14">
               <img src="Amin.jpg" loading="lazy" alt="Photo by christian ferrer"
                 class="h-full w-full object-cover object-center" />
             </div>
 
             <div>
-              <div class="text-center text-sm font-bold text-yellow-50 sm:text-left md:text-base">Amin Haj Kacem</div>
-              <p class="text-center text-sm text-yellow-200 sm:text-left md:text-sm">Etudiant a ISIMS</p>
+              <div class="text-center text-sm font-bold text-white sm:text-left md:text-base">Amin Haj Kacem</div>
+              <p class="text-center text-sm text-gray-500 sm:text-left md:text-sm">Etudiant a ISIMS</p>
             </div>
           </div>
         </div>
@@ -257,13 +258,14 @@
   </div>
 
   <!--CTA-->
-  <div class="bg-gray-900 py-6 sm:py-8 lg:py-12">
+  <div class="bg-gray-900 py-6 sm:py-8 lg:py-12" id="cta">
+    <div id="blur">
     <div class="mx-auto max-w-screen-2xl px-4 md:px-8">
       <div class="mx-auto flex max-w-xl flex-col items-center text-center">
-        <p class="mb-4 font-semibold text-yellow-500 md:mb-6 md:text-lg xl:text-xl">Qu'est ce que vous attendez?</p>
-
-        <h1 class="text-white mb-8 text-3xl font-bold sm:text-4xl md:mb-12 md:text-5xl">Crée un compte et start looking
-          for opportunities</h1>
+        <div >
+        <p  class="bg-white p-1 px-5 inline-block my-0 rounded-2xl mb-4 font-semibold text-gray-900 md:mb-6 md:text-lg xl:text-base" >Qu'est ce que vous attendez?</p>
+        </div>
+        <h1 class="text-white mb-8 text-3xl font-bold sm:text-4xl md:mb-12 md:text-5xl">Crée un compte et commencer à chercher des opportunités</h1>
 
         <div class="flex w-full flex-col gap-2.5 sm:flex-row sm:justify-center">
           <a href="#"
@@ -274,10 +276,11 @@
         </div>
       </div>
     </div>
+    </div>
   </div>
 
   <!--footer-->
-  <div class="bg-gray-900 pt-4 sm:pt-10 lg:pt-12">
+  <div class="bg-slate-950 pt-4 sm:pt-10 lg:pt-12">
     <footer class="mx-auto max-w-screen-2xl px-4 md:px-8">
       <div class="mb-16 grid grid-cols-2 gap-12 border-t pt-10 md:grid-cols-4 lg:grid-cols-6 lg:gap-8 lg:pt-12">
         <div class="col-span-full lg:col-span-2">
@@ -452,7 +455,7 @@
         <!-- nav - end -->
       </div>
 
-      <div class="border-t py-8 text-center text-sm text-gray-400">© 2023 - VISION. All rights reserved.</div>
+      <div class="border-t py-8 text-center text-sm text-gray-400">© 2023 - VISION. Tous les droits sont réservés.</div>
     </footer>
   </div>
 </body>

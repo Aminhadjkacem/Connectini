@@ -1,6 +1,6 @@
 <?php
 session_start();
-// Check if the user is not logged in
+// // Check if the user is not logged in
 if (!isset($_SESSION['username'])) {
     header("Location: index.php"); // Redirect to the login page
     exit();
@@ -16,46 +16,51 @@ if (!isset($_SESSION['username'])) {
     <title>student dach</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<script src="/Js/DashboardStudent.js"></script>
+<script src="Js/DashboardStudent.js"></script>
 <body class="bg-gray-900">
-<header class="sticky top-0 bg-gray-950 flex items-center mb-2 justify-between py-2">
-            <!-- logo - start -->
-            <a href="#" class="flex items-center mb-4 text-2xl mt-4 font-semibold text-gray-900 dark:text-white">
-              <img class="w-auto h-9 ml-5 mr-2 " src="logo.png" alt="logo">
-              
-          </a>
-            <!-- logo - end -->
-      
-            <!-- nav - start -->
-            <!-- <nav class="hidden gap-12 lg:flex">
-              <a href="#" class="text-lg font-semibold text-yellow-500">Home</a>
-              <a href="#" class="text-lg font-semibold text-gray-600 transition duration-100 hover:text-yellow-500 active:text-yellow-500">Offres</a>
-              <a href="#" class="text-lg font-semibold text-gray-600 transition duration-100 hover:text-yellow-500 active:text-yellow-500">Contact</a>
-              </nav> -->
-            <!-- nav - end -->
-      
-            <!-- buttons - start -->
-            <a href="logout.php" class="hidden mr-6 rounded-lg bg-yellow-500 px-8 py-3 text-center text-sm font-semibold text-white outline-none ring-yellow-300 transition duration-100 hover:bg-gray-300 focus-visible:ring active:text-gray-700 md:text-base lg:inline-block">Deconnecter</a>
-      
-            <button type="button" class="inline-flex items-center gap-2 rounded-lg bg-gray-200 px-2.5 py-2 text-sm font-semibold text-gray-500 ring-yellow-300 hover:bg-gray-300 focus-visible:ring active:text-gray-700 md:text-base lg:hidden">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 20 20" fill="currentColor">
-                <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h6a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd" />
-              </svg>
-      
-              Menu
-            </button>
-            <!-- buttons - end -->
-    </header>
-<div class="bg-gray-900 py-6 sm:py-8 lg:py-12">
+<header class=" flex z-10 sticky top-0   items-center justify-between bg-slate-950 py-4 px-5  md:py-1 ">
+      <!-- logo - start -->
+      <a href="#" class="flex items-center mb-4 text-2xl mt-4 font-semibold text-gray-900 dark:text-white">
+        <img class="w-auto h-9 mr-2" src="logo.png" alt="logo">
+
+      </a>
+      <!-- logo - end -->
+
+      <!-- nav - start -->
+      <!-- nav - end -->
+
+      <!-- buttons - start -->
+      <a href="logout.php"
+        class="hidden rounded-lg bg-yellow-500 px-8 py-3 text-center text-sm font-semibold text-white outline-none ring-yellow-300 transition duration-100 hover:bg-yellow-600 focus-visible:ring active:text-gray-700 md:text-base lg:inline-block">Deconnecter</a>
+
+      <button type="button"
+        class="inline-flex items-center gap-2 rounded-lg bg-gray-200 px-2.5 py-2 text-sm font-semibold text-gray-500 ring-yellow-300 hover:bg-gray-300 focus-visible:ring active:text-gray-700 md:text-base lg:hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 20 20" fill="currentColor">
+          <path fill-rule="evenodd"
+            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h6a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+            clip-rule="evenodd" />
+        </svg>
+          Menu
+      </button>
+      <!-- buttons - end -->
+  </header>
+<div class="bg-gray-900 py-6 sm:py-8 lg:py-12 ">
         <div class="mx-auto w-[50%] px-2 md:px-8">
-            <div class="grid  md:grid-cols-2 ">
-                <div class=" w-60 h-60 object-center overflow-hidden rounded-lg  mt-5 shadow-lg ">
-                    <div >
-                        <img src="aaa.jfif" width=15rem  haight=15rem class="h-60 w-60 rounded-full ring-3 -ring-yellow-500 object-cover object-center" />
+            <div class="grid  md:grid-cols-2 relative">
+                <div class="flex relative border-2 border-yellow-500 justify-center items-center  w-60 h-60 object-center overflow-hidden rounded-full  mt-5 shadow-lg ">
+                    <div>
+                    
+                    <a href="#up" onclick="document.getElementById('up').click()" >
+                    <svg id="soo" xmlns="http://www.w3.org/2000/svg" fill="#eab308" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class=" w-16 h-16">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    </a>
+                    <img src="aaa.jfif"  width=15rem hidden haight=15rem class="h-60 hover:border-2 absolute top-0 left-0 border-yellow-500 w-60 rounded-full ring-3 -ring-yellow-500 object-cover object-center" />
+                    <input id="up" class="block h-7 hidden text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400" id="file_input" type="file">
                     </div>
                 </div>
 
-                <div class="md:pt-8">
+                <div class="md:pt-8 flex-col justify-center flex">
                     <p class="text-center font-bold text-yellow-500 md:text-left">Bonjour MR(MRS) </p>
 <?php
 $conn = new mysqli("localhost", "root", "", "pfe");
@@ -66,7 +71,7 @@ $stmt->execute();
 $stmt->bind_result($fullName);
 $stmt->fetch();
 $conn->close();
-    echo " <h1 class='mb-4 text-center text-2xl font-bold text-white sm:text-3xl md:mb-6 md:text-left'>$fullName</h1>";
+    echo " <h1 class='my-4 text-center text-2xl font-bold text-white sm:text-3xl md:mb-6 md:text-left'>$fullName</h1>";
 ?>
                     <p class="mb-6 text-yellow-500 sm:text-lg md:mb-8">
                         python / java / .net
@@ -79,8 +84,11 @@ $conn->close();
             </div>
         </div>
     </div>
+    <div class="flex justify-center">
+    <hr class=" w-4/5 border-yellow-500">
+    </div>
     <section class="bg-white dark:bg-gray-900">
-        <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-6 ">
+        <div class="py-5 px-4 mx-auto max-w-screen-xl text-center lg:py-6 lg:px-6 ">
             <div class="mx-auto max-w-screen-sm text-center mb-8 lg:mb-16">
                 <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Les Offres</h2>
                 <p class="font-light text-gray-500 lg:mb-16 sm:text-xl dark:text-gray-400">explorer les offres des entreprise </p>
@@ -153,8 +161,11 @@ $conn->close();
                  
             </div>  
         </div>
-      </section>
-      <section class="h-[50vh]">
+    </section>
+<div class="flex justify-center my-10">
+    <hr class=" w-4/5 border-yellow-500">
+</div>
+    <section class="py-10 h-[50vh]">
         <div class="mx-[50vh] w-[100vh] bg-transparent">
             <h2 class="mb-2 text-center text-xl font-semibold text-white sm:text-2xl md:mb-4 md:text-left">La
                 liste des enseignants valable:</h2>
@@ -198,7 +209,7 @@ $x=$_SESSION['username'];
 $req1="select nom_fac from etudiant where mail = '$x' ";
 $result1 = mysqli_query($conn,$req1);
 $row1 = mysqli_fetch_array($result1);
-$req = "SELECT concat(nom_prof,' ',prenom_prof),mail,capacite FROM professeur where nom_fac='$row1[0]'";
+$req = "SELECT concat(nom_prof,' ',prenom_prof),mail,capacite FROM professeur where nom_fac='$row1[0]' and mail not in(select mailprof from requests)";
 $result=$conn->query($req);
 if($result->num_rows>0){
     while($ligne=$result->fetch_array()){
@@ -208,7 +219,7 @@ if($result->num_rows>0){
         if($capacite=='0'){
             continue;
         }
-        echo "<tbody><tr class='bg-white border-b dark:bg-gray-800 dark:border-gray-700'><th scope='row' class='px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white'>$nom</th><td class='px-6 py-4'>$mail</td><td class='px-6 py-4'>$capacite</td><td class='px-6 py-4 text-right'><a href='requestpro.php?email=$mail' id='invitation-link' class='font-medium text-green-600 dark:text-green-500 hover:underline' onclick='updateText()'>Envoyer une invitation</a></td></tr>";
+    echo "<tbody><tr class='bg-white border-b dark:bg-gray-800 dark:border-gray-700'><th scope='row' class='px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white'>$nom</th><td class='px-6 py-4' id='email'>$mail</td><td class='px-6 py-4'>$capacite</td><td class='px-6 py-4 text-right'><a href='javascript:void(0)' id='invitation-link' class='font-medium text-green-600 dark:text-green-500 hover:underline' onclick='change_statue(\"$mail\", this)'>Envoyer une invitation</a></td></tr>";
                 }
     }
 ?>

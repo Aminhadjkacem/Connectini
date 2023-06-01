@@ -110,7 +110,7 @@ if($conn->connect_error){
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             session_start();
             $_SESSION['username'] = $nom;
-            header("Location: Dashboard Teacher.php");
+            header("Location: Dashboard_Teacher.php");
         }
     }
     
@@ -120,7 +120,7 @@ if($conn->connect_error){
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             session_start();
             $_SESSION['username'] = $nom;
-            header("Location: destination.php");
+            header("Location: DashAdmin.php");
         }
     }
     
@@ -130,7 +130,7 @@ if($conn->connect_error){
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             session_start();
             $_SESSION['username'] = $name;
-            header("Location: Dashboard société.php");
+            header("Location: Dashboard_sociéte.php");
         }
     }
 }

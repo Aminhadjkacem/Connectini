@@ -18,34 +18,32 @@ if (!isset($_SESSION['username'])) {
         <script src="signup_erreur.js"></script> 
 </head>
 <body class="bg-gray-900">
-<header class="sticky top-0 bg-gray-950 flex items-center mb-2 justify-between py-2">
-            <!-- logo - start -->
-            <a href="#" class="flex items-center mb-4 text-2xl mt-4 font-semibold text-gray-900 dark:text-white">
-              <img class="w-auto h-9 ml-5 mr-2 " src="logo.png" alt="logo">
-              
-          </a>
-            <!-- logo - end -->
-      
-            <!-- nav - start -->
-            <!-- <nav class="hidden gap-12 lg:flex">
-              <a href="#" class="text-lg font-semibold text-yellow-500">Home</a>
-              <a href="#" class="text-lg font-semibold text-gray-600 transition duration-100 hover:text-yellow-500 active:text-yellow-500">Offres</a>
-              <a href="#" class="text-lg font-semibold text-gray-600 transition duration-100 hover:text-yellow-500 active:text-yellow-500">Contact</a>
-              </nav> -->
-            <!-- nav - end -->
-      
-            <!-- buttons - start -->
-            <a href="logout.php" class="hidden mr-6 rounded-lg bg-yellow-500 px-8 py-3 text-center text-sm font-semibold text-white outline-none ring-yellow-300 transition duration-100 hover:bg-gray-300 focus-visible:ring active:text-gray-700 md:text-base lg:inline-block">Deconnecter</a>
-      
-            <button type="button" class="inline-flex items-center gap-2 rounded-lg bg-gray-200 px-2.5 py-2 text-sm font-semibold text-gray-500 ring-yellow-300 hover:bg-gray-300 focus-visible:ring active:text-gray-700 md:text-base lg:hidden">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 20 20" fill="currentColor">
-                <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h6a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd" />
-              </svg>
-      
-              Menu
-            </button>
-            <!-- buttons - end -->
-    </header>
+<header class=" flex sticky top-0   items-center justify-between bg-slate-950 py-4 px-5  md:py-1 ">
+      <!-- logo - start -->
+      <a href="#" class="flex items-center mb-4 text-2xl mt-4 font-semibold text-gray-900 dark:text-white">
+        <img class="w-auto h-9 mr-2" src="logo.png" alt="logo">
+
+      </a>
+      <!-- logo - end -->
+
+      <!-- nav - start -->
+      <!-- nav - end -->
+
+      <!-- buttons - start -->
+      <a href="logout.php"
+        class="hidden rounded-lg bg-yellow-500 px-8 py-3 text-center text-sm font-semibold text-white outline-none ring-yellow-300 transition duration-100 hover:bg-yellow-600 focus-visible:ring active:text-gray-700 md:text-base lg:inline-block">Deconnecter</a>
+
+      <button type="button"
+        class="inline-flex items-center gap-2 rounded-lg bg-gray-200 px-2.5 py-2 text-sm font-semibold text-gray-500 ring-yellow-300 hover:bg-gray-300 focus-visible:ring active:text-gray-700 md:text-base lg:hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 20 20" fill="currentColor">
+          <path fill-rule="evenodd"
+            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h6a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+            clip-rule="evenodd" />
+        </svg>
+          Menu
+      </button>
+      <!-- buttons - end -->
+  </header>
     <div class="bg-gray-900 py-6 sm:py-8 lg:py-12">
         <div class="mx-auto w-[50%] px-2 md:px-8">
             <div class="grid  md:grid-cols-2 ">
